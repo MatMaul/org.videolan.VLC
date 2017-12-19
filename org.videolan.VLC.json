@@ -211,8 +211,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.samba.org/ftp/tdb/tdb-1.3.12.tar.gz",
-          "sha256": "60134e32253cac8e2efe5e0185d20123c208bcf6ad15edf2f50d80daadf8c348"
+          "url": "https://www.samba.org/ftp/tdb/tdb-1.3.14.tar.gz",
+          "sha256": "3a7d4bb79229460df530c7e1c7067ba9fb9d370aa61fff537fdc2bdf918acbe9"
         }
       ]
     },
@@ -436,8 +436,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.us.xiph.org/releases/opus/opus-1.1.3.tar.gz",
-          "sha256": "58b6fe802e7e30182e95d0cde890c0ace40b6f125cffc50635f0ad2eef69b633"
+          "url": "https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz",
+          "sha256": "cfafd339ccd9c5ef8d6ab15d7e1a412c054bf4cb4ecbbbcc78c12ef2def70732"
         },
         {
           "type": "script",
@@ -484,12 +484,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.videolan.org/pub/libdvbpsi/1.2.0/libdvbpsi-1.2.0.tar.bz2",
-          "sha256": "36d9b233306e48b58999e87864253b564e20932ed46a485e44ef7058f1f927e8"
-        },
-        {
-          "type": "patch",
-          "path": "libdvbpsi.patch"
+          "url": "https://download.videolan.org/pub/libdvbpsi/1.3.1/libdvbpsi-1.3.1.tar.bz2",
+          "sha256": "d68367afd5ad8e6ebca813e7958a3ceb9743b421adb4265eceeb6a3511c84420"
         },
         {
           "type": "script",
@@ -553,8 +549,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/libass/libass/releases/download/0.13.5/libass-0.13.5.tar.xz",
-          "sha256": "9387a2421b6e6a132c7d473de594b9f0367aa85af64aa103b66f0861431b1596"
+          "url": "https://github.com/libass/libass/releases/download/0.14.0/libass-0.14.0.tar.xz",
+          "sha256": "881f2382af48aead75b7a0e02e65d88c5ebd369fe46bc77d9270a94aa8fd38a2"
         },
         {
           "type": "script",
@@ -571,8 +567,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dl.matroska.org/downloads/libebml/libebml-1.3.4.tar.bz2",
-          "sha256": "c50d3ecf133742c6549c0669c3873f968e11a365a5ba17b2f4dc339bbe51f387"
+          "url": "https://dl.matroska.org/downloads/libebml/libebml-1.3.5.tar.xz",
+          "sha256": "d818413f60742c2f036ba6f582c5e0320d12bffec1b0fc0fc17a398b6f04aa00"
         },
         {
           "type": "script",
@@ -592,8 +588,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dl.matroska.org/downloads/libmatroska/libmatroska-1.4.5.tar.bz2",
-          "sha256": "79023fa46901e5562b27d93a9dd168278fa101361d7fd11a35e84e58e11557bc"
+          "url": "https://dl.matroska.org/downloads/libmatroska/libmatroska-1.4.7.tar.bz2",
+          "sha256": "46441eb3bae9f970f68affaa211dd74302a7072dcd2becfb1114da11b66525fa"
         },
         {
           "type": "script",
@@ -729,8 +725,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://ffmpeg.org/releases/ffmpeg-3.3.3.tar.xz",
-          "sha256": "d2a9002cdc6b533b59728827186c044ad02ba64841f1b7cd6c21779875453a1e"
+          "url": "http://ffmpeg.org/releases/ffmpeg-3.4.1.tar.xz",
+          "sha256": "5a77278a63741efa74e26bf197b9bb09ac6381b9757391b922407210f0f991c0"
         }
       ]
     },
@@ -777,8 +773,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.sourceforge.net/libmtp/libmtp-1.1.13.tar.gz",
-          "sha256": "494ee02fbfbc316aad75b93263dac00f02a4899f28cfda1decbbd6e26fda6d40"
+          "url": "https://download.sourceforge.net/libmtp/libmtp-1.1.14.tar.gz",
+          "sha256": "3817d3e296be8f1bc527385585780e70984e8e0d6a0d00349240d67e3df412e8"
         }
       ]
     },
