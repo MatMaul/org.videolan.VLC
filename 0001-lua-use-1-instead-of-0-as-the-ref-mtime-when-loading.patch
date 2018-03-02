@@ -1,0 +1,50 @@
+From 78b16344de8cf53cd22806a64dd4ae7d23467697 Mon Sep 17 00:00:00 2001
+From: Mathieu Velten <matmaul@gmail.com>
+Date: Fri, 2 Mar 2018 18:50:44 +0100
+Subject: [PATCH] lua: use -1 instead of 0 as the ref mtime when loading a file
+
+The resource would never get loaded on filesystems that report
+always 0 as a mtime.
+---
+ share/lua/intf/http.lua | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/share/lua/intf/http.lua b/share/lua/intf/http.lua
+index 1cf8946126..45f474f46d 100644
+--- a/share/lua/intf/http.lua
++++ b/share/lua/intf/http.lua
+@@ -89,13 +89,13 @@ function process_raw(filename)
+ end
+ 
+ function process(filename)
+-    local mtime = 0    -- vlc.net.stat(filename).modification_time
++    local mtime = -1    -- vlc.net.stat(filename).modification_time
+     local func = false -- process_raw(filename)
+     return function(...)
+         local new_mtime = vlc.net.stat(filename).modification_time
+         if new_mtime ~= mtime then
+             -- Re-read the file if it changed
+-            if mtime == 0 then
++            if mtime == -1 then
+                 vlc.msg.dbg("Loading `"..filename.."'")
+             else
+                 vlc.msg.dbg("Reloading `"..filename.."'")
+@@ -225,13 +225,13 @@ end
+ 
+ function rawfile(h,path,url)
+     local filename = path
+-    local mtime = 0    -- vlc.net.stat(filename).modification_time
++    local mtime = -1    -- vlc.net.stat(filename).modification_time
+     local page = false -- io.open(filename):read("*a")
+     local callback = function(data,request)
+         local new_mtime = vlc.net.stat(filename).modification_time
+         if mtime ~= new_mtime then
+             -- Re-read the file if it changed
+-            if mtime == 0 then
++            if mtime == -1 then
+                 vlc.msg.dbg("Loading `"..filename.."'")
+             else
+                 vlc.msg.dbg("Reloading `"..filename.."'")
+-- 
+2.14.3
+
